@@ -381,3 +381,68 @@ O(n)
 | HashSet (Seen Numbers) | O(n) | O(n) |
 
 > **Recommended Interview Solution:** **HashSet**, because it is the simplest, fastest, and stops immediately when a duplicate is found.
+>
+> ---
+
+# Pattern
+
+## Pattern Name
+
+**Hashing (HashMap / HashSet)**
+
+### When to Identify This Pattern
+
+Think about using a **HashMap** or **HashSet** whenever the problem asks:
+
+- Find duplicates
+- Check if an element already exists
+- Count frequencies
+- Find unique elements
+- Fast lookup in **O(1)** average time
+- Compare two arrays or strings
+- Store previously seen values
+
+### Key Idea
+
+Trade **extra space** for **faster lookup**.
+
+Instead of searching the entire array repeatedly (`O(n)`), use a HashMap/HashSet to perform lookups in **O(1)** average time.
+
+---
+
+# Related Questions
+
+## Easy
+
+- Contains Duplicate
+- Valid Anagram
+- Two Sum
+- Intersection of Two Arrays
+- Happy Number
+- Isomorphic Strings
+- Majority Element
+- Find the Difference
+- Contains Duplicate II
+
+---
+
+## Medium
+
+- Group Anagrams
+- Top K Frequent Elements
+- Longest Consecutive Sequence
+- Subarray Sum Equals K
+- Continuous Subarray Sum
+- Find All Anagrams in a String
+- Longest Substring Without Repeating Characters
+- Minimum Window Substring
+
+---
+
+# What You Should Learn from This Problem
+
+- Sorting can simplify duplicate detection but increases time complexity.
+- HashMap is useful when frequencies are required.
+- HashSet is the best choice when you only need to know whether an element has already been seen.
+- Always think:
+  > **Can I replace repeated searching with a HashMap or HashSet?**
